@@ -70,7 +70,7 @@ exports.createUser = async (req, res) => {
     const uploadResponse = await cloudinary.uploader.upload(ProductImage.tempFilePath, {
       folder: 'shoprite-products', // Optional folder name in Cloudinary
     });
-
+ 
     // Use the Cloudinary URL for the image
     const imageUrl = uploadResponse.secure_url;
 
